@@ -1,0 +1,38 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:gray;
+}
+
+header{
+    padding: 40px;
+    background-color:darkgreen;
+    border-radius: 15px;
+    padding: 20px; 
+    height: 150px;  
+    
+}
+
+h1 {
+    color:gold;
+}
+
+form{
+    display:block;
+    color-scheme: rgb(38, 238, 38);
+}
+
+form input,
+form textarea {
+  border: 3px solid green;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+form button {
+    background-color: #690;
+    color: greenyellow;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }

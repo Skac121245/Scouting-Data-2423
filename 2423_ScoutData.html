@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<link rel="stylesheet" href="2423_ScoutData.css">
+<body>
+    <header> 
+        <h1>2423 Scouting Data Form</h1>
+        <nav>
+            <ul>
+              <li><a href="#pit-pit">Pit-to-Pit</a></li>
+              <li><a href="#auto">Auto</a></li>
+              <li><a href="#teleop">Teleop</a></li>
+              <li><a href=#endgame">End Game</a></li>
+            </ul>
+          </nav>
+    </header>
+    <section id="pit-pit">
+        <h3>Pit-To-Pit</h3>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbzB2aVj3xgip-fivq7XIevoqtLJese3-OEqDOTEEZ46Q6gV814rWQif3ZFkADzvhmjY6w/exec" name="pit-pit_form" id="pit-pit_form">
+            <label for="teamNumber">Team Number</label>
+            <input type="number" id="teamNumber" name="Team_Number"><br>
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" name="Team_Name"><br>
+    
+            <input type="submit" name="submit_pit">
+        </form>
+    </section>
+    <section id="auto">
+        <h3>Auto</h3>
+        <form method="post" action="https://script.google.com/macros/s/AKfycby44uzBpcFPIKmVKsSE7-ND8_n48fLypr5BEuAywsILleKHQN7UjFAj8v7WJNkowPVsNA/exec" name="auto_form" id="auto_form">
+            <label for="teamNumber">Team Number</label>
+            <input type="number" id="teamNumber" name="Team_Number"><br>
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" name="Team_Name"><br>
+            <label for="itDrove">Did they drive?</label>
+            <input type="text" placeholder="(yes or no)" id="itDrove" name="itDrove"/>
+
+            <input type="submit" name="submit_auto">
+        </form>
+    </section>
+
+</body>
+</html>
