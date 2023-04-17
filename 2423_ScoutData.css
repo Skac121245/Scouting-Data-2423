@@ -4,16 +4,24 @@ body {
 }
 
 header{
+    font-size: large;
     padding: 40px;
     background-color:darkgreen;
     border-radius: 15px;
-    padding: 20px; 
+    padding: 10px; 
     height: 151px;  
     
 }
 
 h1 {
     color:gold;
+    text-align: center;
+}
+h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 form{
@@ -35,4 +43,24 @@ form button {
     border: none;
     padding: 5px;
     cursor: pointer;
+    width: 95%;
   }
+
+nav {
+    font-size: 20px;
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: yellow;
+}

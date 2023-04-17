@@ -15,7 +15,7 @@
               <li><a href="#pit-pit">Pit-to-Pit</a></li>
               <li><a href="#auto">Auto</a></li>
               <li><a href="#teleop">Teleop</a></li>
-              <li><a href=#endgame">End Game</a></li>
+              <li><a href="#endgame">End Game</a></li>
             </ul>
           </nav>
     </header>
@@ -26,6 +26,14 @@
             <input type="number" id="teamNumber" name="Team_Number"><br>
             <label for="teamName">Team Name</label>
             <input type="text" id="teamName" name="Team_Name"><br>
+            <label for="bumperSize">How big is their robot with bumpers?</label>
+            <input type="text" placeholder="(length x width)" id="bumperSize" name="bumperSize"><br>
+            <label for="driveTrain">What type is their drivetrain?</label>
+            <input type="text" placeholder="(swerve, tank, mechanum, etc...)" id="driveTrain" name="driveTrain"><br>
+            <label for="gamePeices">What game pieces can they pick up?</label>
+            <input type="text" placeholder="(cubes, cones, all)"id="gamePeices" name="gamePeices"><br>
+            <label for="autos">What kinds of autos do they have?</label>
+            <input type="text" placeholder="(describe a lil bit)"id="autos" name="autos"><br>
     
             <input type="submit" name="submit_pit">
         </form>
@@ -47,6 +55,28 @@
             <input type="text" placeholder="(high, mid, or low)" id="whereScore" name="whereScore"/>
 
             <input type="submit" name="submit_auto">
+        </form>
+    </section>
+    <section id="teleop">
+        <h3>Tele-Op</h3>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbz5IUyj5BLF-0itB77vUj9wErwWw6k8dj2G6d3iVveQGiBnw33moDOk0q8YO-kqM02y/exec" id="tele-op_Form" name="tele-op_Form">
+            <label for="Team_Number">Team Number</label>
+            <input type="number" id="Team_Number" name="Team_Number"><br>
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" name="Team_Name"><br>
+
+            <input type="submit" name="submit_tele-op">
+        </form>
+    </section>
+    <section id="endgame">
+        <h3>End Game</h3>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbx8qiE_pgZ4OOpCOkPCo0z4ZEO0Z5JCay3_cwXXzjy5NJNA36tKgo95SUfWHo9KS3FR9w/exec" id="end-game_Form" name="end-game_Form">
+            <label for="Team_Number">Team Number</label>
+            <input type="number" id="Team_Number" name="Team_Number"><br>
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" name="Team_Name"><br>
+
+            <input type="submit" name="submit_end-game">
         </form>
     </section>
 
