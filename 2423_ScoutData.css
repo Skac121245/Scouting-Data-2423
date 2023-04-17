@@ -16,12 +16,14 @@ header{
 h1 {
     color:gold;
     text-align: center;
+    cursor:default;
 }
 h3 {
     color: black;
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
+    cursor:default;
 }
 
 form{
@@ -35,6 +37,7 @@ form textarea {
   padding: 5px;
   margin-bottom: 10px;
   width: 95%;
+  cursor:pointer;
 }
 
 form button {
