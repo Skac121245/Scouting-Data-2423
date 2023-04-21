@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teleopSection.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="2423_ScoutData.html">Home</a></li>
+            <li><a href="pitToPitSection.html">Pit-to-Pit</a></li>
+            <li><a href="autoSection.html">Auto</a></li>
+            <li><a href="endgameSection.html">End Game</a></li>
+          </ul>
+    </nav>
+    <h2>Tele-Op</h2>
+        <table>
+                        
+            <style> .gridbg_team {
+                background-color: #470101;
+            
+                margin: 2px;
+                padding: 0px;
+                border-radius: 10px;
+            }
+            
+            .gridbg_coop {
+                background-color: #282828;
+                margin: 2px;
+                padding: 0px;
+                border-radius: 10px;
+            }
+            </style>
+        
+            <tbody><tr class="highrowteleop">
+               <td class="gridbg_team cone">
+                <input type="checkbox" id="cbAT0" name="AT[0]">
+                <label for="cbAT0" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+            </td>
+            <td class="gridbg_team cube">
+                <input type="checkbox" id="cbAT1" name="AT[1]">
+                <label for="cbAT1" class="cube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+            </td>
+            <td class="gridbg_team cone">
+                <input type="checkbox" id="cbAT2" name="AT[2]">
+                <label for="cbAT2" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+            </td>
+            <td class="gridbg_coop cone">
+                <input type="checkbox" id="cbAT3" name="AT[3]">
+                <label for="cbAT3" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+            </td>
+            <td class="gridbg_coop cube">
+                <input type="checkbox" id="cbAT4" name="AT[4]">
+                <label for="cbAT4" class="cube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+            </td>
+            <td class="gridbg_coop cone">
+                <input type="checkbox" id="cbAT5" name="AT[5]">
+                <label for="cbAT5" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+            </td>
+            <td class="gridbg_team cone">
+                <input type="checkbox" id="cbAT6" name="AT[6]">
+                <label for="cbAT6" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+            </td>
+            <td class="gridbg_team cube">
+                <input type="checkbox" id="cbAT7" name="AT[7]">
+                <label for="cbAT7" class="cube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+            </td>
+            <td class="gridbg_team cone">
+                <input type="checkbox" id="cbAT8" name="AT[8]">
+                <label for="cbAT8" class="cone">
+                    <img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td> 
+                </tr>
+            <tr class="midrowauto">
+                <td class="gridbg_team cone">
+                    <input type="checkbox" id="cbAM0" name="AM[0]">
+                    <label for="cbAM0" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td>
+                <td class="gridbg_team cube">
+                    <input type="checkbox" id="cbAM1" name="AM[1]">
+                    <label for="cbAM1" class="cube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                </td>
+                <td class="gridbg_team cone">
+                    <input type="checkbox" id="cbAM2" name="AM[2]">
+                    <label for="cbAM2" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td>
+                <td class="gridbg_coop cone">
+                    <input type="checkbox" id="cbAM3" name="AM[3]">
+                    <label for="cbAM3" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td>
+                <td class="gridbg_coop cube">
+                    <input type="checkbox" id="cbAM4" name="AM[4]">
+                    <label for="cbAM4" class="cube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                </td>
+                <td class="gridbg_coop cone">
+                    <input type="checkbox" id="cbAM5" name="AM[5]">
+                    <label for="cbAM5" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td>
+                <td class="gridbg_team cone">
+                    <input type="checkbox" id="cbAM6" name="AM[6]">
+                    <label for="cbAM6" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td>
+                <td class="gridbg_team cube">
+                    <input type="checkbox" id="cbAM7" name="AM[7]">
+                    <label for="cbAM7" class="cube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                </td>
+                <td class="gridbg_team cone">
+                    <input type="checkbox" id="cbAM8" name="AM[8]">
+                    <label for="cbAM8" class="cone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                </td>                        
+                </tr>
+            <tr class="lowrowauto">
+                <td class="gridbg_team">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB0a" name="ABy[0]">
+                        <label for="cbAB0a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB0b" name="ABp[0]">
+                        <label for="cbAB0b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_team">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB1a" name="ABy[1]">
+                        <label for="cbAB1a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB1b" name="ABp[1]">
+                        <label for="cbAB1b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_team">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB2a" name="ABy[2]">
+                        <label for="cbAB2a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span><span class="brcube">
+                        <input type="checkbox" id="cbAB2b" name="ABp[2]">
+                        <label for="cbAB2b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_coop">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB3a" name="ABy[3]">
+                        <label for="cbAB3a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB3b" name="ABp[3]">
+                        <label for="cbAB3b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_coop">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB4a" name="ABy[4]">
+                        <label for="cbAB4a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB4b" name="ABp[4]">
+                        <label for="cbAB4b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_coop">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB5a" name="ABy[5]">
+                        <label for="cbAB5a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB5b" name="ABp[5]">
+                        <label for="cbAB5b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_team">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB6a" name="ABy[6]">
+                        <label for="cbAB6a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB6b" name="ABp[6]">
+                        <label for="cbAB6b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_team">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB7a" name="ABy[7]">
+                        <label for="cbAB7a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB7b" name="ABp[7]">
+                        <label for="cbAB7b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>
+                <td class="gridbg_team">
+                    <span class="brcone">
+                        <input type="checkbox" id="cbAB8a" name="ABy[8]">
+                        <label for="cbAB8a" class="brcone"><img src="https://frcscouting.net/wilson/cone-placeholder.png"></label>
+                    </span>
+                    <span class="brcube">
+                        <input type="checkbox" id="cbAB8b" name="ABp[8]">
+                        <label for="cbAB8b" class="brcube"><img src="https://frcscouting.net/wilson/cube-placeholder.png"></label>
+                    </span>
+                </td>                        
+                </tr>
+                
+            
+        
+        
+        </tbody>
+        </table>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbz5IUyj5BLF-0itB77vUj9wErwWw6k8dj2G6d3iVveQGiBnw33moDOk0q8YO-kqM02y/exec" id="tele-op_Form" name="tele-op_Form">
+            <label for="Team_Number">Team Number</label>
+            <input type="number" id="Team_Number" name="Team_Number"><br>
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" name="Team_Name"><br>
+
+            <input type="submit" name="submit_tele-op">
+        </form>
+</body>
+</html>

@@ -1,0 +1,321 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:gray;
+}
+
+header{
+    font-size: large;
+    padding: 50px;
+    background-color:darkgreen;
+    border-radius: 15px;
+    padding: 10px; 
+    height: 200px;  
+    
+}
+
+h1 {
+    color:gold;
+    text-align: center;
+    cursor:default;
+}
+
+h2 {
+    color: #ffce00;
+    padding: 2px;
+    text-align:center;
+    margin:0%;
+    background-color: darkgreen;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 30px;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    cursor:default;
+}
+
+form{
+    display:block;
+    color-scheme: rgb(38, 238, 38);
+}
+
+form label {
+    text-align: center;
+    font-style: bold;
+    font-size: 20px;
+}
+
+form input,
+form textarea {
+  border: 3px solid green;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 95%;
+  cursor:pointer;
+}
+
+form button {
+    background-color: #690;
+    color: greenyellow;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 95%;
+  }
+
+nav {
+    font-size: 20px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: yellow;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+input[type="checkbox"][id^="cb"] {
+    display: none;
+}
+
+.brcone label {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.brcube label {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+label {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.brcone label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 12px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    font-size: 8px;
+    font-weight: normal;
+}
+
+.brcube label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 12px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    font-size: 8px;
+    font-weight: normal;
+}
+
+label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.cone > label:before {
+    border: 2px solid #FFCE00;
+    background-color: #000000;
+}
+
+.cube > label:before {
+    border: 2px solid #7D30AA;
+    background-color: #000000;
+}
+
+
+.brcone > label:before {
+    border: 1px solid #FFCE00;
+    background-color: #000000;
+}
+
+.brcube > label:before {
+    border: 1px solid #7D30AA;
+    background-color: #000000;
+}
+
+label img {
+    height: 60px;
+    width: 60px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+.brcone label img {
+    height: 30px;
+    width: 30px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+.brcube label img {
+    height: 30px;
+    width: 30px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+:checked + label {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid;
+}
+
+.cone > :checked + label {
+    border: 2px solid;
+    border-color: #FFCE00;
+
+}
+
+.cube > :checked + label {
+    border: 2px solid;
+    border-color: #6B2B89;
+}
+
+.brcone > :checked + label {
+    border: 1px solid;
+    border-color: #FFCE00;
+
+
+}
+
+.brcube > :checked + label {
+    border: 1px solid;
+    border-color: #6B2B89;
+
+}
+
+:checked + label:before {
+    background-color: #000000;
+    transform: scale(1);
+}
+
+:checked + label img {
+    transform: scale(0.8);
+    z-index: -1;
+}
+
+.cone > :checked + label img {
+    content: url("cone-scored.png");
+}
+
+.cube > :checked + label img {
+    content: url("cube-scored.png");
+}
+
+.brcone > :checked + label img {
+    content: url("cone-scored.png");
+}
+
+.brcube > :checked + label img {
+    content: url("cube-scored.png");
+}
+
+/* this should be figured out */
+.highrowauto > td > :checked + label:before { 
+    content: "+5";
+}
+
+.midrowauto > td > :checked + label:before {
+    content: "+3";
+}
+
+.lowrowauto > td > span > :checked + label:before {
+    content: "+2";
+}
+.highrowtelop > td > :checked + label:before {
+    content: "+5";
+}
+
+.midrowtelop > td > :checked + label:before {
+    content: "+3";
+}
+
+.lowrowtelop > td > span > :checked + label:before {
+    content: "+2";
+}
+
+/*
+            :checked + label:before  + .highrowtelop{
+                content: "+5";
+            }
+            :checked + label:before  + .midrowtelop{
+                content: "+3";
+            }
+            :checked + label:before  + .lowrowtelop{
+                content: "+2";
+            }*/
