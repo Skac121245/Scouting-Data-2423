@@ -1,2 +1,1 @@
-let teamNumber = document.getElementsByTagName("teamNumber");
-console.log(teamNumber);
+var autoLoad = reqire(autoload.php);
