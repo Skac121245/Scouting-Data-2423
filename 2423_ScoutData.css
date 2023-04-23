@@ -5,11 +5,11 @@ body {
 
 header{
     font-size: large;
-    padding: 50px;
+    padding: 5px;
     background-color:darkgreen;
     border-radius: 15px;
     padding: 10px; 
-    height: 200px;  
+    height: 100px;  
     
 }
 
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
     color: #ffce00;
-    padding: 2px;
+    padding: 5px;
     text-align:center;
     margin:0%;
 }
@@ -60,7 +60,7 @@ form button {
 nav {
     font-size: 20px;
     list-style: none;
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
     text-align: center;
 
@@ -74,6 +74,13 @@ nav li {
 nav a {
     text-decoration: none;
     color: yellow;
+}
+
+footer {
+    background-color: #690;
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
 }
 
 ul {
