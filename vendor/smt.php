@@ -2,10 +2,6 @@
 use Parse\ParseObject;
 use Parse\ParseQuery;
 
-$checkBox = new ParseObject('CheckBox');
-$checkBox->set('isTrue', false);
-$checkBox->save();
-
 
 
 

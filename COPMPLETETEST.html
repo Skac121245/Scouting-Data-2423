@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+  <script>
+    Parse.initialize(" 2423scouting.org Project", "tv96HhGBtkmi");
+    Parse.serverURL = "2423scouting.org";
+  </script>
+  <form id="end-game_Form">
+    <label for="Team_Number">Team Number</label>
+    <input type="number" id="Team_Number" name="Team_Number"><br>
+    <label for="teamName">Team Name</label>
+    <input type="text" id="teamName" name="Team_Name"><br>
+
+    <input type="submit" name="submit_end-game">
+</form>
+<script>
+    const MyObject = Parse.Object.extend("MyObject");
+
+    document.getElementById("end-game_Form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const teamNumber = document.getElementsByName("Team_Number")[0].value;
+      const teamName = document.getElementsByName("teamName")[0].value;
+
+      const myObject = new MyObject();
+      myObject.set("Team_Number", teamNumber);
+      myObject.set("teamName", teamName);
+
+      myObject.save().then(function() {
+        alert("Data saved successfully!");
+      });
+    });
+  </script>
+</body>
+</html>
