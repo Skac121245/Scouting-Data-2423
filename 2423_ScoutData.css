@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI';
     background-color:gray;
 }
 
@@ -13,14 +13,12 @@ header{
     
 }
 
-h1 {
-    color:gold;
+.h1 {
     text-align: center;
     cursor:default;
 }
 
 h2 {
-    color: #ffce00;
     padding: 5px;
     text-align:center;
     margin:0%;
